@@ -45,6 +45,7 @@ nav {
 }
 .nav-logo {
   display: flex;
+  /* justify-content: center; */
   gap: 17px;
 }
 
@@ -75,8 +76,13 @@ nav {
   color: rgb(255, 84, 0);
 }
 
+.bar {
+  display: none;
+}
+
 /* banner styles */
-.banner-content {
+
+.banner-container {
   height: 500px;
   border-radius: 16px;
   background-image: linear-gradient(
@@ -109,7 +115,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(3px);
 }
 
 .banner-form input,
@@ -122,4 +128,65 @@ select {
   font-size: 1rem;
   color: rgba(19, 19, 24, 0.5);
   padding: 16px 0px 16px 16px;
+}
+
+/* responsive for mobile */
+
+@media screen and (max-width: 576px) {
+  header {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .nav-title {
+    font-size: 21px;
+  }
+
+  .nav-logo {
+    gap: 9px;
+  }
+  .nav-logo img {
+    width: 40px;
+    height: 30px;
+  }
+  .nav-links ul {
+    display: none;
+  }
+  .bar {
+    display: inline-block;
+  }
+
+  /* banner */
+  .banner-container {
+    margin-top: 20px;
+    height: 483px;
+  }
+  .banner-title {
+    font-size: 22px;
+    margin-top: 32px;
+  }
+
+  .banner-des {
+    width: 305px;
+    font-size: 14px;
+  }
+
+  .banner-form {
+    flex-direction: column;
+    width: 287px;
+    height: 288px;
+    gap: 16px;
+  }
+
+  .banner-form input,
+  select {
+    width: 255px;
+    height: 52px;
+  }
+
+  .banner-btn {
+    width: 255px;
+    height: 52px;
+    font-size: 1rem;
+  }
 }
