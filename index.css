@@ -31,6 +31,12 @@ body {
   text-align: center;
 }
 
+.title-primary {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
 /* header design */
 header {
   width: 80%;
@@ -128,6 +134,49 @@ select {
   font-size: 1rem;
   color: rgba(19, 19, 24, 0.5);
   padding: 16px 0px 16px 16px;
+}
+
+/* popular styles */
+.popular-container {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-details {
+  width: 577px;
+}
+
+.p-first {
+  margin-bottom: 26px;
+}
+
+.p-last {
+  width: 530px;
+  margin-top: 26px;
+  margin-bottom: 34px;
+}
+
+.popular-details p,
+ul {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(19, 19, 24, 0.7);
+}
+
+.popular-container ul {
+  list-style-position: inside;
+  padding-left: 20px;
+  width: 525px;
+}
+.popular-details ul li {
+  margin-bottom: 18px;
+}
+
+.popular-img {
+  width: 540px;
+  height: 550px;
 }
 
 /* responsive for mobile */
