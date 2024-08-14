@@ -214,7 +214,7 @@ ul {
   grid-template-columns: 0.8fr 1.5fr 0.7fr;
 }
 
-.row-3{
+.row-3 {
   grid-template-columns: 0.75fr 1.25fr;
 }
 
@@ -240,6 +240,14 @@ ul {
     color: rgb(19, 19, 24);
     font-size: 20px;
     font-weight: 800;
+  }
+
+  .responsvie-des {
+    max-width: 309px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(19, 19, 24, 0.7);
+    margin-bottom: 16px;
   }
   header {
     width: 90%;
@@ -333,5 +341,24 @@ ul {
 
   .hide {
     display: none;
+  }
+
+  /* destination styles  */
+  .destination {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .row-1,
+  .row-2,
+  .row-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 16px 0px;
+  }
+
+  .country {
+    font-size: 20px;
+    font-weight: 700;
   }
 }
