@@ -326,6 +326,12 @@ footer {
   justify-content: center;
   align-items: center;
   margin: 2rem auto;
+  gap: 6px;
+}
+
+.footer-logo img {
+  width: 50px;
+  height: 50px;
 }
 
 .footer-logo-title {
@@ -490,6 +496,7 @@ footer hr {
   }
 
   .choose-card {
+    /* border: 2px solid yellow; */
     width: 100%;
   }
 
@@ -510,5 +517,24 @@ footer hr {
     font-weight: 400;
     color: rgb(90, 90, 93);
     margin: 0px 0px 16px 32px;
+  }
+
+  /* footer styles */
+  footer {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .footer-logo img {
+    width: 25px;
+    height: 25px;
+  }
+  .footer-logo-title {
+    font-size: 21px;
+    font-weight: 800;
+  }
+
+  .footer-des {
+    width: 287px;
   }
 }
